@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Fetch data from the server
-    fetch('/api/login') // Updated to use proxy
+    fetch('api/login') // Updated to use proxy
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
